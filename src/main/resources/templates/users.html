@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Users</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>User</th>
+				<th>Password</th>
+				<th>Level</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${users}">
+				<th><span th:text="${user.name}">User</span></th>
+				<th><span th:text="${user.password}">Password</span></th>
+				<th><span th:text="${user.level}">Level</span></th>
+			</tr>
+		</tbody>
+	</table>
+	
+	<form action="#" th:action="@{/users/adduser}" th:object="${user}" method="post">
+		<p>User: <input type="text" th:field="*{name}"/></p>
+		<p>Password: <input type="text" th:field="*{password}"/></p>
+		<p>Level: <input type="number" th:field="*{level}"/></p>
+		<p> <input type="submit" value="submit"/> </p>
+	</form>
+
+</body>
+</html>

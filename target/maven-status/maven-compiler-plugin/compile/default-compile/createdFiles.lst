@@ -1,0 +1,16 @@
+com/solopro/controller/AlmacenController.class
+com/solopro/converter/UserConverter.class
+com/solopro/service/impl/UserServiceImpl.class
+com/solopro/service/impl/ProductoServiceImpl.class
+com/solopro/component/RequestTimeInterceptor.class
+com/solopro/controller/LoginController.class
+com/solopro/entity/User.class
+com/solopro/FantomasApplication.class
+com/solopro/repository/ProductoJpaRepository.class
+com/solopro/entity/Producto.class
+com/solopro/repository/UserRepository.class
+com/solopro/model/UserModel.class
+com/solopro/configuration/WebMvcConfiguration.class
+com/solopro/service/servicecontacts.class
+com/solopro/service/ProductoService.class
+com/solopro/service/UsuarioService.class

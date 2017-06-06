@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Administracion y control de inventarios</title>
+<!-- BOOTSTRAP STYLES-->
+<link href="#" th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+<!-- FONTAWESOME STYLES-->
+<link href="#" th:href="@{/css/font-awesome.css}" rel="stylesheet" />
+<!-- CUSTOM STYLES-->
+<link href="#" th:href="@{/css/custom.css}" rel="stylesheet" />
+<!-- GOOGLE FONTS-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css' />
+</head>
+<body>
+
+
+
+	<div id="wrapper">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="adjust-nav">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".sidebar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"> 
+						<img th:src="@{/img/batman-logo.png}" />
+					</a>
+				</div>
+
+				<span class="logout-spn">
+					<form th:action="@{/logout}" method="POST">
+						<button type="submit" style="color: #000;">LOGOUT</button>
+					</form>
+				</span>
+			</div>
+		</div>
+		<!-- /. NAV TOP  -->
+		<nav class="navbar-default navbar-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav" id="main-menu">
+
+
+					<li class="active-link"><a th:href="@{/index}"><i
+							class="fa fa-desktop "></i>Inicio</a></li>
+					<li><a th:href="@{/blank}"><i class="fa fa-table "></i>Almacen</a>
+					</li>
+					<li><a href="#" th:href="@{/blank}"><i class="fa fa-edit "></i>Estadisticas</a>
+					</li>
+					<li><a href="#"><i class="fa fa-qrcode "></i>Ventas</a></li>
+				</ul>
+			</div>
+
+		</nav>
+		<!-- /. NAV SIDE  -->
+		<div id="page-wrapper">
+			<div id="page-inner">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Pagina en blanco</h2>
+					</div>
+				</div>
+				<!-- /. ROW  -->
+				<hr />
+
+				<!-- /. ROW  -->
+			</div>
+			<!-- /. PAGE INNER  -->
+		</div>
+		<!-- /. PAGE WRAPPER  -->
+	</div>
+
+	<!-- /. WRAPPER  -->
+	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+	<!-- JQUERY SCRIPTS -->
+	<script th:src="@{/js/jquery-1.10.2.js}"></script>
+	<!-- BOOTSTRAP SCRIPTS -->
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	<!-- CUSTOM SCRIPTS -->
+	<script th:src="@{/js/custom.js}"></script>
+
+
+</body>
+</html>
